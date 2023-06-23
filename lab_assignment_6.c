@@ -1,8 +1,29 @@
+/*
+Gabriel Hernandez 
+Lab 6 - recursion function
+6/23/2023
+*/
+
 #include <stdio.h>
 
 int search(int numbers[], int low, int high, int value) 
 {
+	if(low > high)
+	{
 	return -1;
+	}
+
+	int mid = (low + high) / 2;
+
+	if(value < numbers[mid])
+		return search(numbers, low, mid - 1, value);
+
+	else if(value > numbers[mid])
+		return search(numbers, mid + 1, high, value);
+
+	else
+		return mid;
+
 }
 
 void printArray(int numbers[], int sz)
