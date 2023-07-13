@@ -1,5 +1,5 @@
 /*Gabriel Hernandez
-Lab 7 - There was an error with my github that the lab 7 file got corrupt hence this is a replacement.
+Lab 7 - There was an error with my github  that the lab 7 file got corrupt hence this is a replacement.
 */
 
 #include <stdio.h>
